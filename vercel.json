@@ -14,7 +14,7 @@
       "use": "@vercel/static"
     },
     {
-      "src": "public/inbox.html",  // Vercel will serve inbox.html statically
+      "src": "public/inbox.html",
       "use": "@vercel/static"
     }
   ],
