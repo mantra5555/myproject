@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Email Viewer</title>
+    <script>
+      // Function to load the inbox by calling the Netlify function
+      async function loadInbox() {
+        const response = await fetch('/.netlify/functions/email'); // Call the function endpoint
+        const data = await response.text(); // Get HTML response from the function
+        document.getElementById('inbox').innerHTML = data; // Display the inbox
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Email Viewer</h1>
+    <p><a href="#" onclick="loadInbox()">Go to Inbox</a></p>
+
+    <div id="inbox">
+      <!-- The inbox will be displayed here -->
+    </div>
+  </body>
+</html>
