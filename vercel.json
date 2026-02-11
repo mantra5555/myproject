@@ -12,6 +12,10 @@
     {
       "src": "public/app.js",
       "use": "@vercel/static"
+    },
+    {
+      "src": "public/inbox.html",  // Vercel will serve inbox.html statically
+      "use": "@vercel/static"
     }
   ],
   "routes": [
