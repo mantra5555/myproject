@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/app.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/inbox",
+      "dest": "/api/inbox.js"
+    }
+  ]
+}
